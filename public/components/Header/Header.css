@@ -1,0 +1,72 @@
+/* Base navbar link style */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  color: #000000; /* soft accent color */
+}
+
+/* Active link (manually add class="active" to the current link) */
+.navbar a.active {
+  color: #000000;
+}
+
+/* Optional: underline animation for active or hover */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.HeaderDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 65px;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBar ul li {
+  margin: 0px 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.NavBar ul li:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.icon {
+  font-size: 28px;
+  font-weight: bold;
+}
+.icon:hover {
+  cursor: pointer;
+}
+ul li:hover {
+  cursor: pointer;
+}
